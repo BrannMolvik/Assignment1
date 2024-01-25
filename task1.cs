@@ -1,9 +1,4 @@
 // Your program should start at this line.
-
-
-#region Basic functions
-// These functions are just her to make your intelisense work. 
-// They only have a conceptual function.
 int openRoads = 0;
 int circlingPrevention = 0;
 int turnCount = 0;
@@ -16,6 +11,12 @@ while(!AtGoal())
 {
     Move();
 }
+
+
+#region Basic functions
+// These functions are just her to make your intelisense work. 
+// They only have a conceptual function.
+
 
 void oneWayStreet()
 {
