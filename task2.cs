@@ -1,18 +1,27 @@
 // Your program should start at this line.
-/*
-Example:
-Move();
-Move();
-Move();
-Turn();
-Move();
-Move();
-Turn();
-Turn();
-Turn();
-Move();
-*/
 
+while (!AtGoal())
+{
+    if (Peek())
+    {
+        Move();
+        FollowLeftWall();
+    }
+}
+
+
+
+void FollowLeftWall()
+{
+    for (int i = 0; i < 3; i++)
+    {
+        Turn();
+    }
+    while(!Peek())
+    {
+        Turn();
+    }
+}
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 
