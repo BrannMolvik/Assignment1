@@ -7,6 +7,10 @@ while (!AtGoal())
         Move();
         FollowLeftWall();
     }
+    else
+    {
+        Turn();
+    }
 }
 
 
