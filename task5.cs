@@ -7,6 +7,10 @@ while (!AtGoal())
         Move();
         FollowLeftWall();
     }
+    else
+    {
+        Turn();
+    }
 }
 
 
@@ -22,6 +26,7 @@ void FollowLeftWall()
         Turn();
     }
 }
+
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 
